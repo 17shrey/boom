@@ -27,7 +27,7 @@ const Crud = () => {
 
     const fetchData = async () => {
         try {
-            const response = await fetch("/showcrud");
+            const response = await fetch("boom-rosy.vercel.app/showcrud");
             const data = await response.json();
             setCruds(data);
         } catch (error) {
@@ -39,7 +39,7 @@ const Crud = () => {
         console.log("user saving in progress");
         e.preventDefault();
         const { first_name, last_name, address, adhar_no } = crud;
-        const rest = await fetch("/usersave", {
+        const rest = await fetch("boom-rosy.vercel.app/usersave", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
