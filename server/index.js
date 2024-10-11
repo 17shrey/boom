@@ -4,7 +4,7 @@ const express = require ("express");
 app=express();
 app.use(cors(
   {
-    origin:["https://deploy-mern-1whq.vercel.app"],
+    origin:["https://boom-frontend.vercel.app"],
     methods:["POST","GET"],
     credentials:true
     
